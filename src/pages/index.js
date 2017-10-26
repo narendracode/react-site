@@ -30,6 +30,12 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <div>
+      <Link to="/about/">About</Link>
+    </div>
+    <div>
+      <Link to="/contact/">Contact</Link>
+    </div>
+    <div>
     	<Link to="/page-2/">Go to page 2</Link>
     </div>
     <div>

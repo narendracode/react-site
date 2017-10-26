@@ -3,7 +3,10 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-//import './index.css'
+import styles from "./index.module.scss"
+console.log('index.js load..')
+console.log(styles)
+
 
 const Header = () => (
   <div
@@ -19,7 +22,7 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <span className={styles.head}>
         <Link
           to="/"
           style={{
@@ -27,9 +30,32 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Blog
+          Home
         </Link>
-      </h1>
+      </span>
+      <span className={styles.headRight}>
+        <Link
+          to="/about"
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+          }}
+        >
+          About
+        </Link>
+      </span>
+      <span className={styles.headRight}>
+        <Link
+          to="/contact"
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+          }}
+        >
+          Contact Us
+        </Link>
+      </span>
+
     </div>
   </div>
 )
