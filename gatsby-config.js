@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby`,
+	description: 'Gatsby starter for bootstrap a blog',
+    url: 'https://jaxx2104.github.io/gatsby-starter-bootstrap',
+    author: 'narendra',
+    twitter: 'narendra',
   },
+  pathPrefix: '/',
   plugins: [
   				`gatsby-plugin-react-helmet`,
   				`gatsby-transformer-remark`,
