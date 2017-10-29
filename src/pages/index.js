@@ -25,29 +25,6 @@ const IndexPage = () => (
     </div>
     <p>Posted October 26, 2017</p>
   </div>
-  <div>
-    <h1>Hello people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div>
-      <Link to="/about/">About</Link>
-    </div>
-    <div>
-      <Link to="/contact/">Contact</Link>
-    </div>
-    <div>
-    	<Link to="/page-2/">Go to page 2</Link>
-    </div>
-    <div>
-    	<Link to="/counter/">Counter</Link>
-    </div>
-    <div>
-    	<Link to="/page-3/">Go to page 3</Link>
-    </div>
-    <div>
-      <Link to="/about-css-modules/">css module</Link>
-    </div>
-  </div>
  </div>
 )
 

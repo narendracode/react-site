@@ -1,9 +1,14 @@
 import React from "react"
 
-export default () =>
-  <div>
-    <h1>I'd love to talk! Email me at the address below</h1>
-    <p>
-      <a href="mailto:me@example.com">me@example.com</a>
-    </p>
+const ContactPage = () => (
+<div>
+  <div style={{ margin: '3rem auto', maxWidth: 600 }}>
+    <h1>Contact Me</h1>
+    <div>
+      I would love to talk to you.
+    </div>
   </div>
+ </div>
+)
+
+export default ContactPage
