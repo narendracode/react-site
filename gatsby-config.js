@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby`,
+    author: `Narendra`,
 	description: 'Gatsby starter for bootstrap a blog',
     url: 'https://jaxx2104.github.io/gatsby-starter-bootstrap',
     author: 'narendra',
-    twitter: 'narendra',
+    twitter: 'narendra'
   },
   pathPrefix: '/',
   plugins: [
