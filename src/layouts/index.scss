@@ -121,6 +121,10 @@ $display4-size: 3.5rem !default;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
+.container-fluid{
+  padding: 0px;
+}
+
 html,
 body {
   height: 100%;
@@ -135,12 +139,12 @@ p {
 }
 
 img {
-  padding-bottom: 10px;
-  margin-bottom: 15px;
+  //padding-bottom: 10px;
+  //margin-bottom: 15px;
   max-width: 100%;
 }
 
 img:hover {
-  -webkit-animation: pulse 0.5s;
-  animation: pulse 0.5s;
+ // -webkit-animation: pulse 0.5s;
+  //animation: pulse 0.5s;
 }
