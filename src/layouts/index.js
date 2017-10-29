@@ -27,6 +27,7 @@ class Template extends React.Component {
       <div>
         <SiteNavi title={siteMetadata.title} {...this.props} />
         {children()}
+        
       </div>
     )
   }

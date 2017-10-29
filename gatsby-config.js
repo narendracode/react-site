@@ -4,7 +4,7 @@ module.exports = {
     author: `Narendra`,
 	description: 'Gatsby starter for bootstrap a blog',
     url: 'https://jaxx2104.github.io/gatsby-starter-bootstrap',
-    author: 'narendra',
+    author: 'Narendra',
     twitter: 'narendra'
   },
   pathPrefix: '/',

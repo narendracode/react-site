@@ -12,10 +12,10 @@ class ReadNext extends React.Component {
       <div className="footer">
         <hr className="border-primary" />
         <p>
-          {title}
-          <Link to="/profile/">
+          Posted by
+          <Link to="/about/">
             <br />
-            <strong>{author}</strong> on Profile
+            <strong>{author}</strong>
           </Link>
         </p>
       </div>
