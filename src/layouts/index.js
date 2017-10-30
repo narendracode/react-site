@@ -11,6 +11,7 @@ import 'font-awesome/css/font-awesome.css'
 
 console.log('layout index.js load..')
 
+
 class Template extends React.Component {
   componentDidMount() {
     const WOW = require('wowjs')

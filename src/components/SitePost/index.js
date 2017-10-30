@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 import size from 'lodash/size'
 import ReadNext from '../ReadNext'
+import PostTags from '../PostTags'
+import PostCategories from '../PostCategories'
 import './style.scss'
 
 class SitePost extends React.Component {
@@ -42,6 +44,8 @@ class SitePost extends React.Component {
     })
     return categories
   }
+
+
 
   tags(data) {
     if (!data) {
@@ -83,15 +87,13 @@ class SitePost extends React.Component {
                 <h1>{title}</h1>
                 <time dateTime={date}>{date}</time>
               </Link>
-              {categories}
-              {tags}
+               <PostCategories categories={cate} />
+               <PostTags tags={tag} />
             </div>
             <div
               className="page-content"
               dangerouslySetInnerHTML={{ __html: description }}
             />
-            {more}
-            {footer}
           </div>
         </div>
       </div>

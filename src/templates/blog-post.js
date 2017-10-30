@@ -5,19 +5,26 @@ import React from 'react'
 import striptags from 'striptags'
 import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
-
+import PostTags from '../components/PostTags'
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = get(this, 'props.data.post')
-    const site = get(this, 'props.data.site')
-    const layout = get(post, 'frontmatter.layout')
-    const title = get(post, 'frontmatter.title')
-    const siteTitle = get(site, 'meta.title')
+    const post = get(this, 'props.data.post');
+    const site = get(this, 'props.data.site');
+    const layout = get(post, 'frontmatter.layout');
+    const title = get(post, 'frontmatter.title');
+    const siteTitle = get(site, 'meta.title');
+    const tags = get(this, 'props.data.post.frontmatter.tags');
+    const categories = get(this, 'props.data.post.frontmatter.categories');
+    const path = get(this,'frontmatter.path');
+    const date = get(this,'frontmatter.date');
 
-    let template = ''
+
+    let template = '';
     if (layout != 'page') {
+      console.log('checkpoint 1');
       template = <SitePost data={post} site={site} isIndex={false} />
     } else {
+      console.log('checkpoint 2');
       template = <SitePage {...this.props} />
     }
     return (

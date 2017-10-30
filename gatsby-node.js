@@ -7,9 +7,12 @@ const fs = require('fs-extra')
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
+
   return new Promise((resolve, reject) => {
     const pages = []
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const postPage = path.resolve('./src/templates/blog-post.js');
+    const tagPage = path.resolve('./src/templates/tag.js');
+    const categoryPage = path.resolve('./src/templates/category.js');
     resolve(
       graphql(
         `
@@ -19,6 +22,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   frontmatter {
                     path
+                    tags
+                    categories
                   }
                 }
               }
@@ -31,16 +36,53 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
+        const tagSet = new Set();
+        const categorySet = new Set();
+
         // Create blog posts pages.
         _.each(result.data.allMarkdownRemark.edges, edge => {
+
+          if (edge.node.frontmatter.tags) {
+            edge.node.frontmatter.tags.forEach(tag => {
+              tagSet.add(tag);
+            });
+          }
+
+          if (edge.node.frontmatter.categories) {
+            categorySet.add(edge.node.frontmatter.categories);
+          }
+
           createPage({
             path: edge.node.frontmatter.path,
-            component: blogPost,
+            component: postPage,
             context: {
               path: edge.node.frontmatter.path,
             },
           })
-        })
+        });
+
+        const tagList = Array.from(tagSet);
+        tagList.forEach(tag => {
+          createPage({
+            path: `/tags/${_.kebabCase(tag)}/`,
+            component: tagPage,
+            context: {
+              tag
+            }
+          });
+        });
+
+        const categoryList = Array.from(categorySet);
+        categoryList.forEach(category => {
+          createPage({
+            path: `/categories/${_.kebabCase(category)}/`,
+            component: categoryPage,
+            context: {
+              category
+            }
+          });
+        });
+
       })
     )
   })
