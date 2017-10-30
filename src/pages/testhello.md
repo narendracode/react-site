@@ -6,6 +6,10 @@ path: "/hello-world/"
 categories:
   - Typography
   - Test
+tags:
+    - programming
+    - stuff
+    - other
 description: "German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible."
 ---
 

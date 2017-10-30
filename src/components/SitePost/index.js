@@ -43,6 +43,21 @@ class SitePost extends React.Component {
     return categories
   }
 
+  tags(data) {
+    if (!data) {
+      return
+    }
+    const tags = []
+    data.forEach((tag, i) => {
+      tags.push(
+        <span className="badge badge-info text-white" key={i}>
+          #{tag}
+        </span>
+      )
+    })
+    return tags
+  }
+
   render() {
     const { site, data, isIndex } = this.props
 
@@ -52,8 +67,10 @@ class SitePost extends React.Component {
     const desc = get(data, 'frontmatter.description') || get(data, 'html')
     const cate =
       get(data, 'frontmatter.category') || get(data, 'frontmatter.categories')
-
+    const tag =
+      get(data, 'frontmatter.tag') || get(data, 'frontmatter.tags')
     const categories = cate ? this.categories(cate) : ''
+    const tags = tag ? this.tags(tag) : ''
     const description = isIndex ? this.description(desc) : desc
     const more = isIndex ? this.more(desc, path) : ''
     const footer = isIndex ? '' : <ReadNext data={site} />
@@ -67,6 +84,7 @@ class SitePost extends React.Component {
                 <time dateTime={date}>{date}</time>
               </Link>
               {categories}
+              {tags}
             </div>
             <div
               className="page-content"
