@@ -34,6 +34,9 @@ $amethyst: #9b59b6 !default;
 $alizarn: #e74c3c !default;
 $sunflower:#f1c40f !default;
 $orange: #f39c12 !default;
+
+$wetasphalt: #34495e !default;
+
 // Reassign color vars to semantic color scheme
 $theme-colors: (
     primary: $purple,
@@ -196,6 +199,16 @@ $display4-size: 3.5rem !default;
   //white-space: nowrap;
   overflow: hidden;
 }
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: $wetasphalt;
+}
+
 html,
 body {
   height: 100%;
