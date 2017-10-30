@@ -49,7 +49,9 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
 
           if (edge.node.frontmatter.categories) {
-            categorySet.add(edge.node.frontmatter.categories);
+            edge.node.frontmatter.categories.forEach(category => {
+              categorySet.add(category);
+            });
           }
 
           createPage({
