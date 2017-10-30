@@ -74,6 +74,7 @@ export const pageQuery = graphql`
             title
             path
             categories
+            tags
             description
             date(formatString: "YYYY/MM/DD")
           }
