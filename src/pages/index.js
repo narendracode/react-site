@@ -2,30 +2,68 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = () => (
-<div>
-  <div style={{ margin: '3rem auto', maxWidth: 600 }}>
-    <h1>Richard Hamming on Luck</h1>
-    <div>
-      <p>
-        From Richard Hamming’s classic and must-read talk, “<a href="http://www.cs.virginia.edu/~robins/YouAndYourResearch.html">
-          You and Your Research
-        </a>”.
+<div className="container">
+  <div className="row">
+    <div className="col-md-12"> 
+      <h1 className="display-3 wow bounceInUp" data-wow-duration="1s">
+        Web Expressive
+      </h1>
+      <p className="lead wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+        The Expressive Web Blog
       </p>
-      <blockquote>
-        <p>
-          There is indeed an element of luck, and no, there isn’t. The prepared
-          mind sooner or later finds something important and does it. So yes, it
-          is luck.{" "}
-          <em>
-            The particular thing you do is luck, but that you do something is
-            not.
-          </em>
-        </p>
-      </blockquote>
     </div>
-    <p>Posted October 26, 2017</p>
   </div>
- </div>
+  <div className="row">
+    <div className="col-md-12">
+      <h3 className="wow fadeInDown" data-wow-duration="2s" data-wow-delay="3s">
+        Featured Topics
+      </h3>
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="4s">
+      <div className="card">
+        <img className="rounded topic-logo" src={require('./images/index/html.png')} />
+        <div className="card-body">
+          <h4 className="card-title">HTML</h4>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  className="btn btn-info">Browse</a>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="5s">
+      <div className="card">
+        <img className="rounded topic-logo" src={require('./images/index/css.png')} />
+        <div className="card-body">
+          <h4 className="card-title">CSS</h4>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  className="btn btn-info">Browse</a>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="6s">
+      <div className="card">
+        <img className="rounded topic-logo" src={require('./images/index/js.png')} />
+        <div className="card-body">
+          <h4 className="card-title">Javascript</h4>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  className="btn btn-info">Browse</a>
+        </div>
+      </div>
+    </div>
+    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="7s">
+      <div className="card">
+        <img className="rounded topic-logo" src={require('./images/index/bootstrap.png')} />
+        <div className="card-body">
+          <h4 className="card-title">Bootstrap</h4>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a  className="btn btn-info">Browse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 )
 
 export default IndexPage
