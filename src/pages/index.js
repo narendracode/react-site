@@ -5,10 +5,10 @@ const IndexPage = () => (
 <div className="container">
   <div className="row">
     <div className="col-md-12"> 
-      <h1 className="display-3 wow bounceInUp" data-wow-duration="1s">
+      <h3 className="display-3 brand-title wow slideInRight" data-wow-duration="1s">
         Web Expressive
-      </h1>
-      <p className="lead wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
+      </h3>
+      <p className="lead brand-desc wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s">
         The Expressive Web Blog
       </p>
     </div>
@@ -26,8 +26,10 @@ const IndexPage = () => (
         <img className="rounded topic-logo" src={require('./images/index/html.png')} />
         <div className="card-body">
           <h4 className="card-title">HTML</h4>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  className="btn btn-info">Browse</a>
+          <div className="card-text">
+            Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.
+          </div>
+          <a  className="btn btn-sm btn-info">Browse</a>
         </div>
       </div>
     </div>
@@ -37,8 +39,10 @@ const IndexPage = () => (
         <img className="rounded topic-logo" src={require('./images/index/css.png')} />
         <div className="card-body">
           <h4 className="card-title">CSS</h4>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  className="btn btn-info">Browse</a>
+          <div className="card-text">
+            Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.
+          </div>
+          <a  className="btn btn-sm btn-info">Browse</a>
         </div>
       </div>
     </div>
@@ -47,8 +51,10 @@ const IndexPage = () => (
         <img className="rounded topic-logo" src={require('./images/index/js.png')} />
         <div className="card-body">
           <h4 className="card-title">Javascript</h4>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  className="btn btn-info">Browse</a>
+          <div className="card-text">
+            JavaScript is a dynamic programming language that can provide dynamic interactivity on HTML documents.
+          </div>
+          <a  className="btn btn-sm btn-info">Browse</a>
         </div>
       </div>
     </div>
@@ -57,8 +63,10 @@ const IndexPage = () => (
         <img className="rounded topic-logo" src={require('./images/index/bootstrap.png')} />
         <div className="card-body">
           <h4 className="card-title">Bootstrap</h4>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a  className="btn btn-info">Browse</a>
+          <div className="card-text">
+            Bootstrap is an open source toolkit for developing web pages with HTML, CSS, and Javascript.
+          </div>
+          <a  className="btn btn-sm btn-info">Browse</a>
         </div>
       </div>
     </div>

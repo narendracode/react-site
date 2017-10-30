@@ -82,13 +82,50 @@ $link-hover-decoration: none !default;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
+
+@font-face {
+  font-family: 'LatoLig';
+  src: url('/fonts/LatoLig/LatoLig.eot');
+  src: url('/fonts/LatoLig/LatoLig.woff') format('woff'), 
+  url('/fonts/LatoLig/LatoLig.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'latothinwebfont';
+  src: url('/fonts/latothinwebfont/latothinwebfont.eot');
+  src: url('/fonts/latothinwebfont/latothinwebfont.woff') format('woff'), 
+       url('/fonts/latothinwebfont/latothinwebfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoCondensedBold';
+  src: url('/fonts/RobotoCondensedBold/RobotoCondensedBold.eot');
+  src: url('/fonts/RobotoCondensedBold/RobotoCondensedBold.woff') format('woff'),
+       url('/fonts/RobotoCondensedBold/RobotoCondensedBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('/fonts/RobotoLight/RobotoLight.eot');
+  src: url('/fonts/RobotoLight/RobotoLight.woff') format('woff'),
+       url('/fonts/RobotoLight/RobotoLight.ttf') format('truetype');
+}
+
+
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol' !default;
 $font-family-monospace: 'BasisGrotesqueProMonoRegular', 'andale mono',
   'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
   monospace !default;
-$font-family-base: $font-family-sans-serif !default;
+$font-family-3: $font-family-sans-serif !default;
+
+$font-family-latoLig: 'LatoLig' !important;
+$font-family-latoThin:'latothinwebfont' !important;
+$font-family-robotoCondensed:'RobotoCondensedBold' !important;
+$font-family-robotoLight:'RobotoLight' !important;
+
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg: 1.25rem !default;
@@ -119,6 +156,8 @@ $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 
+
+
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 .container-fluid{
@@ -126,9 +165,37 @@ $display4-size: 3.5rem !default;
 }
 
 .topic-logo{
-  height: 150px;
+  height: 100px;
+  width:100px;
+  align:center;
+  margin: auto;
+  margin-top: 10px;
 }
 
+.card-title{
+  text-align: center;
+}
+
+.card-body{
+  text-align: center;
+}
+
+.brand-title{
+  font-family: $font-family-robotoCondensed;
+}
+
+.brand-desc{
+  font-family: $font-family-robotoCondensed;
+}
+
+.card-text{
+  //max-height: 200px;
+    height: 200px;
+    text-overflow: ellipsis;
+  /* Required for text-overflow to do anything */
+  //white-space: nowrap;
+  overflow: hidden;
+}
 html,
 body {
   height: 100%;
