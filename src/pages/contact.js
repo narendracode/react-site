@@ -5,15 +5,30 @@ const ContactPage = () => (
   <div className="row">
     <div className="col-md-12">
 	    <h1>Contact Me</h1>
-	    <div>
-	      I would love to hear from you.
-	    </div>
-	    <div>
-	    	Send me an email, narendrasoni2@gmail.com
-	    </div>
-	    <div>
-	    	You can even call me at +65-83994009
-	    </div>
+	    <address>
+	      <strong>Full Name</strong>
+	     <br/>
+	      Narendra Kumar Soni
+	    </address>
+
+	    <address>
+	      <strong>Email</strong>
+	     <br/>
+	      narendrasoni2@gmail.com
+	    </address>
+
+	    <address>
+	      <strong>Phone</strong>
+	     <br/>
+	      +65-83994009
+	    </address>
+	    <address>
+	      <strong>Mailing Address</strong>
+	     <br/>
+	      #08-43, 20 Woodland Crescent
+	      <br/>
+	      Singapore, 738082
+	    </address>
 	</div>
   </div>
 </div>
