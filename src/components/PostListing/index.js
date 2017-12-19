@@ -22,9 +22,9 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post =>
-          <div className="container">
+          <div className="container" key={post.path}>
             <div className="articles col-md-12">
-              <div className="article-wrap" key={post.path}>
+              <div className="article-wrap" >
                 <div className="page-header">
                   <Link style={{ boxShadow: 'none' }} to={post.path}>
                     <h1>{post.title}</h1>
