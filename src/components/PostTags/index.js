@@ -4,7 +4,6 @@ import Link from "gatsby-link";
 
 class PostTags extends Component {
   render() {
-    console.log('post tags is called.' + JSON.stringify(this.props));
     const { tags } = this.props;
     return (
       <div className="post-tag-container">

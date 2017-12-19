@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
-
+import PostCategories from '../PostCategories'
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
@@ -10,7 +10,8 @@ class PostListing extends React.Component {
         tags: postEdge.node.frontmatter.tags,
         categories: postEdge.node.frontmatter.categories,
         title: postEdge.node.frontmatter.title,
-        date: postEdge.node.frontmatter.date
+        date: postEdge.node.frontmatter.date,
+        description : postEdge.node.frontmatter.description
       });
     });
     return postList;
@@ -21,11 +22,20 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post =>
-          <Link to={post.path} key={post.title}>
-            <h1>
-              {post.title}
-            </h1>
-          </Link>
+          <div className="container">
+            <div className="articles col-md-12">
+              <div className="article-wrap" key={post.path}>
+                <div className="page-header">
+                  <Link style={{ boxShadow: 'none' }} to={post.path}>
+                    <h1>{post.title}</h1>
+                    <time dateTime={post.date}>{post.date}</time>
+                  </Link>
+                   <PostCategories categories={post.categories} />
+                </div>
+                <div className="page-content" dangerouslySetInnerHTML={{ __html: post.description }} />
+              </div>
+            </div>
+          </div>
         )}
       </div>
     );
