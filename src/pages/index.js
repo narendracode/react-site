@@ -20,8 +20,8 @@ const IndexPage = () => (
       </h3>
     </div>
   </div>
-  <div className="row">
-    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="4s">
+  <div className="row wow zoomIn" data-wow-duration="1s" data-wow-delay="4s">
+    <div className="col-md-3">
       <div className="card">
         <img className="rounded topic-logo" src={require('./images/index/html.png')} />
         <div className="card-body">
@@ -34,7 +34,7 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="5s">
+    <div className="col-md-3">
       <div className="card">
         <img className="rounded topic-logo" src={require('./images/index/css.png')} />
         <div className="card-body">
@@ -46,7 +46,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="6s">
+    <div className="col-md-3">
       <div className="card">
         <img className="rounded topic-logo" src={require('./images/index/js.png')} />
         <div className="card-body">
@@ -58,7 +58,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="col-md-3 wow zoomIn" data-wow-duration="1s" data-wow-delay="7s">
+    <div className="col-md-3">
       <div className="card">
         <img className="rounded topic-logo" src={require('./images/index/bootstrap.png')} />
         <div className="card-body">

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import PostCategories from '../PostCategories'
+import PostTags from '../PostTags'
 class PostListing extends React.Component {
   getPostList() {
     const postList = [];
@@ -31,6 +32,7 @@ class PostListing extends React.Component {
                     <time dateTime={post.date}>{post.date}</time>
                   </Link>
                    <PostCategories categories={post.categories} />
+                   <PostTags tags={post.tags} />
                 </div>
                 <div className="page-content" dangerouslySetInnerHTML={{ __html: post.description }} />
               </div>

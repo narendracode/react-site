@@ -1,0 +1,2 @@
+webpackJsonp([0x93f8b10ddf38],{529:function(e,t){e.exports={data:{allFile:{edges:[{node:{relativePath:"importance-of-gitHub-for-web-developers.md",prettySize:"7.89 kB",extension:"md",birthTime:"2 hours ago"}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---my-files-e42f1b4f4a1c691283e4.js.map
