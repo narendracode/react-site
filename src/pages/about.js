@@ -1,8 +1,7 @@
 import React from "react"
 import Link from 'gatsby-link'
 const AboutPage = () => (
-<div className="container">
-  <div className="row">
+<div className="container page-content">
     <div className="col-md-12">
 	    <h1>About Me</h1>
 	    <p className="text-muted">
@@ -30,8 +29,6 @@ const AboutPage = () => (
 	    Feel free to contact me anytime, i will be happy to have a chat.
 	    </p>
 	</div>
-  </div>
-  <div className="row">
   	<div className="col-md-12">
   		<h1>Public Profiles</h1>
         <a href="https://sg.linkedin.com/in/narendrakumarsoni" target="_blank" className="nav-link">
@@ -46,8 +43,10 @@ const AboutPage = () => (
         <a href="https://twitter.com/Narendra_SoniK" target="_blank" className="nav-link">
           Twitter
         </a>
+         <a href="https://twitter.com/Narendra_SoniK" target="_blank" className="nav-link">
+          Twitter
+        </a>
   	</div>
-  </div>
 </div>
 )
 

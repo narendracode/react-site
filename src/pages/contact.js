@@ -1,7 +1,7 @@
 import React from "react"
 
 const ContactPage = () => (
-<div className="container">
+<div className="container page-content">
   <div className="row">
     <div className="col-md-12">
 	    <h1>Contact Me</h1>

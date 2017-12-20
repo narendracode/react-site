@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
     })
 
     return (
-      <div>
+      <div className="page-content">
         <Helmet
           title={get(site, 'title')}
           meta={[

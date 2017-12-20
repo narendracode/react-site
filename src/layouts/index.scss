@@ -159,12 +159,41 @@ $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 
-
+$desktop-max-width: 1366px !default;
+$lg-tablet-max-width: 991px !default;
+$md-tablet-max-width: 767px !default;
+$phone-max-width: 479px !default;
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
+
+
 .container-fluid{
   padding: 0px;
+}
+
+.page-content{
+    min-height: 1366px;
+    @media screen and (max-width: $desktop-max-width) {
+         /* start of large tablet styles */
+         min-height: 1366px;
+    }
+    @media screen and (max-width: $lg-tablet-max-width) {
+         /* start of large tablet styles */
+         min-height: 1366px;
+    }
+
+    @media screen and (max-width: $md-tablet-max-width) {
+         /* start of medium tablet styles */
+       min-height: 1024px;
+    }
+
+    @media screen and (max-width: $phone-max-width) {
+         /* start of phone styles */
+         min-height: 730px;
+
+    }
+  
 }
 
 .topic-logo{
@@ -202,11 +231,12 @@ $display4-size: 3.5rem !default;
 
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 60px;
     background-color: $wetasphalt;
+    margin-top: 10px;
 }
 
 

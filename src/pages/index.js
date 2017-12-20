@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const IndexPage = () => (
-<div className="container">
+<div className="container page-content">
   <div className="row">
     <div className="col-md-12"> 
       <h3 className="display-3 brand-title wow slideInRight" data-wow-duration="1s">
