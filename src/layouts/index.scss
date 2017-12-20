@@ -205,9 +205,19 @@ $phone-max-width: 479px !default;
   text-align: center;
 }    
 
+
+.resume-format-logo{
+  max-height: 100px;
+  width: 100px;
+}
 .center{
   text-align: center;
 }
+
+.logo-no-margin-left{
+  margin-left:-11px;
+}
+
 
 .social-link{
   margin: 5px;

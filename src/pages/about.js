@@ -17,22 +17,41 @@ const AboutPage = () => (
 	    I worked in both client service and product based companies. Last year I joined a creative company J. Walter Thompson and it has added new dimension to my skillsets. I got chance to put myself into the shoes of art directors and customers. As a result it helped me improve the quality of work that I deliver. My current role requires me to analyze requirements, projects management, architect , design, develop, test, debug, launch projects. 
 	    </p>
 	    <p className="text-muted">
-	    I also work on freelance projects. I love challenges and by keeping myself busy I learn to find solutions to complex problems.
+	    	I also work on freelance projects. I like challenging myself and find solution to complex problems. 
 	    </p>
 	    <p className="text-muted">
-	    I love to share my knowledge and  I look for opportunities to learn from others. In NUS-ISS I have been invited as a guest industry speaker and I organized a workshop for students to get started with MEAN(Mongodb, Expressjs, Angularjs, Nodejs) web development. I also conducted tutorial sessions on my free time  to help people get acquainted with latest industry trends, tips on job hunt.
+			I like sharing knowledge henceforth look for the opportunities to utilize it.I had a pleasure to be invited as a guest industry speaker in NUS-ISS and to organize a worshop for MEAN(Mongodb, Expressjs, Angularjs, Nodejs) web development.I have involved myself conducting tutorial sessions during free time to help people get acquainted with latest industry trends, tips on job hunt.
 	    </p>
 	    <p className="text-muted">
-	    I hold extensive amount of experience in java/jee and jvm related technologies. I am certified java developer. I developed web applications, API engines and utility applications using jee and java frameworks such as Spring Boot, JSF, Spring MVC, Struts.
+	    I am Oracle certified java developer with an extensive amount of experience in Java EE and JVM related technologies. I developed web applications, API engines and utility applications using jee and java frameworks such as Spring Boot, JSF, Spring MVC, Struts.
 	    </p>
 	    <p className="text-muted">
-	    If someone will ask me what I want to do after 5 years from now. I will not hesitate to say that I will look for teaching opportunities.
-	    </p>
-	    <p className="text-muted">
-	    Feel free to contact me anytime, i will be happy to have a chat.
+	    	Feel free to contact me anytime for consulting or work related opportunities, i will be happy to have a chat.
 	    </p>
 	</div>
 
+
+	<div className="col-md-12">
+		<div className="section-header">
+			<h1> DOWNLOAD CURRICULUM VITAE(CV)</h1>
+		</div>
+		<div className="section-content no-border-bottom">
+			<div className="section-content-body center">
+				<div className="bulletPoint">
+		          <a href="/files/resume.pdf" target="_blank" className="social-link">
+		            PDF<span className="fa-stack fa-lg logo-no-margin-left">
+		                <i className="fa fa-file-pdf-o fa-stack-5x"></i>
+		            </span>
+		          </a>
+		          <a href="/files/resume.tex" target="_blank" className="social-link">
+		            Latex<span className="fa-stack fa-lg logo-no-margin-left">
+		                <i className="fa fa-text-width fa-stack-5x"></i>
+		            </span>
+		          </a>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div className="col-md-12">
 		<div className="section-header">
