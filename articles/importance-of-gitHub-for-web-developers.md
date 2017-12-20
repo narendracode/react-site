@@ -2,7 +2,7 @@
 title: The Importance of GitHub for Web Developers
 date: "2017-12-19T22:40:32.169Z"
 layout: post
-path: "/importance-of-github-for-web-developers/"
+path: "/blog/importance-of-github-for-web-developers/"
 categories:
   - programming
   - software-development
@@ -19,6 +19,9 @@ When starting out as a web developer, it can be easy to get lost in the multitud
 GitHub was launched in April 2008 by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett. At its base, it is a web platform, written in Ruby on Rails and Erlang, which hosts code repositories. But it also provides developers with an amazing toolset that makes it easy to follow certain coding best practices, all the while allowing you to get your name out there and show what you are capable of doing.
 
 In this article, I will explain why GitHub is such an important tool for today’s web developer and how you can go about using it to get your name out there and advance your career in web development.
+
+
+![alt text](/images/github.png "Github")
 
 ----------
 

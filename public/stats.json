@@ -1,20 +1,20 @@
 {
   "assetsByChunkName": {
     "path---tags-web-developers": [
-      "path---tags-web-developers-0c90f0f2d28130c1ba52.js",
-      "path---tags-web-developers-0c90f0f2d28130c1ba52.js.map"
+      "path---tags-web-developers-d309d62768ab1434b752.js",
+      "path---tags-web-developers-d309d62768ab1434b752.js.map"
     ],
     "path---categories-software-development": [
-      "path---categories-software-development-169af343e6cf53e0fefe.js",
-      "path---categories-software-development-169af343e6cf53e0fefe.js.map"
+      "path---categories-software-development-14eceae14b995d9b5427.js",
+      "path---categories-software-development-14eceae14b995d9b5427.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-39c3843a67a2c4b41a5d.js",
       "component---src-pages-index-js-39c3843a67a2c4b41a5d.js.map"
     ],
     "path---blog": [
-      "path---blog-8a172d995ee8d5df3dc4.js",
-      "path---blog-8a172d995ee8d5df3dc4.js.map"
+      "path---blog-da9a5a9a3a1c1a50ef3c.js",
+      "path---blog-da9a5a9a3a1c1a50ef3c.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -31,10 +31,6 @@
     "component---src-pages-counter-js": [
       "component---src-pages-counter-js-5e0928b8e238fee010b2.js",
       "component---src-pages-counter-js-5e0928b8e238fee010b2.js.map"
-    ],
-    "path---importance-of-github-for-web-developers": [
-      "path---importance-of-github-for-web-developers-6dc418f6c312d2d163fd.js",
-      "path---importance-of-github-for-web-developers-6dc418f6c312d2d163fd.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-2e9c8b43de6ea914296c.js",
@@ -77,8 +73,8 @@
       "component---src-templates-category-js-a27bea77054af01248b5.js.map"
     ],
     "path---my-files": [
-      "path---my-files-e42f1b4f4a1c691283e4.js",
-      "path---my-files-e42f1b4f4a1c691283e4.js.map"
+      "path---my-files-a2c88dc2f0040fd408f4.js",
+      "path---my-files-a2c88dc2f0040fd408f4.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-cd51d374be13da4bdeeb.js",
@@ -98,6 +94,10 @@
       "path---contact-a0e39f21c11f6a62c5ab.js",
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---blog-importance-of-github-for-web-developers": [
+      "path---blog-importance-of-github-for-web-developers-606a1427f2dd95e2f1ef.js",
+      "path---blog-importance-of-github-for-web-developers-606a1427f2dd95e2f1ef.js.map"
+    ],
     "component---src-pages-blog-js": [
       "component---src-pages-blog-js-ab54fc6b28ab812e0d89.js",
       "component---src-pages-blog-js-ab54fc6b28ab812e0d89.js.map"
@@ -111,22 +111,22 @@
       "component---src-pages-page-2-js-0500b7625369dee62a43.js.map"
     ],
     "app": [
-      "app-16c77e47e9ae9e0c02f6.js",
+      "app-6544a54a125c6cb32406.js",
       "build-js-styles.css",
-      "app-16c77e47e9ae9e0c02f6.js.map",
+      "app-6544a54a125c6cb32406.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-programming": [
-      "path---categories-programming-24f4e140e86b5071bb2a.js",
-      "path---categories-programming-24f4e140e86b5071bb2a.js.map"
+      "path---categories-programming-ee5e34da234efa7652c9.js",
+      "path---categories-programming-ee5e34da234efa7652c9.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tags-github": [
-      "path---tags-github-b1c1f1909721dea2c863.js",
-      "path---tags-github-b1c1f1909721dea2c863.js.map"
+      "path---tags-github-e35698458b258d00dc6f.js",
+      "path---tags-github-e35698458b258d00dc6f.js.map"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-e38c5b06ee36175fbec1.js",
@@ -137,8 +137,8 @@
       "path---about-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---tags-developers": [
-      "path---tags-developers-44035680bd245d0048fb.js",
-      "path---tags-developers-44035680bd245d0048fb.js.map"
+      "path---tags-developers-d05762eaef71bb9671ff.js",
+      "path---tags-developers-d05762eaef71bb9671ff.js.map"
     ]
   }
 }
