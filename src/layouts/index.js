@@ -9,8 +9,6 @@ import "./index.scss"
 import 'animate.css/animate.css'
 import 'font-awesome/css/font-awesome.css'
 
-console.log('layout index.js load..')
-
 
 class Template extends React.Component {
   componentDidMount() {

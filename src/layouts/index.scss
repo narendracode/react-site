@@ -196,6 +196,42 @@ $phone-max-width: 479px !default;
   
 }
 
+.social-profile{
+  border-top: 1px solid #e9ecef;
+}
+.section-header{
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 10px;
+  text-align: center;
+}    
+
+.center{
+  text-align: center;
+}
+
+.social-link{
+  margin: 5px;
+}
+
+.section-content{
+    padding-bottom: 20px;
+    margin-top: 16px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.no-border-bottom{
+  border-bottom: none;
+}
+.section-content-h1{
+  font-size: x-large;
+}
+
+.section-content-h2{
+  font-style: italic;
+  font-size: large;
+}
+
+
 .topic-logo{
   height: 100px;
   width:100px;

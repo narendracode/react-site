@@ -1,5 +1,5 @@
 import React from "react"
-
+import Social from '../components/Social'
 const ContactPage = () => (
 <div className="container page-content">
   <div className="row">
@@ -30,6 +30,9 @@ const ContactPage = () => (
 	      Singapore, 738082
 	    </address>
 	</div>
+	<div className="col-md-12">
+  		<Social />
+  	</div>
   </div>
 </div>
 )
