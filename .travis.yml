@@ -3,6 +3,7 @@ sudo: required
 language: node_js
 node_js:
 - "7"
+script: apt-get install sshpass
 
 notifications:
   email:
@@ -14,7 +15,7 @@ notifications:
 deploy:
   skip_cleanup: true
   provider: script
-  script: echo "build successful"
+  script: sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USER@webexpressive.com "sudo - su && cd /var/www/html/react-site && git pull"
   on:
     branch: ["master"]
 
