@@ -1,9 +1,9 @@
 ---
 sudo: required
-
+3
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y sshpass
+  - sudo apt-get install -y expect
 
 language: node_js
 node_js:
@@ -19,19 +19,6 @@ notifications:
 deploy:
   skip_cleanup: true
   provider: script
-  script: sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no $USER@webexpressive.com "sudo - su && cd /var/www/html/react-site && git pull"
+  script: expect ./scripts/expect.js
   on:
     branch: ["master"]
-
-
-
-#script: npm run build               // The script that builds the app
-
-#deploy:
-#  local_dir: dist                   // The distributed output directory                  
-#  fqdn: deployable.site             // The domain name of the deployed site
-#  provider: pages
-#  skip_cleanup: true
-#  github_token: $GITHUB_TOKEN
-#  on:
-#    branch: master
