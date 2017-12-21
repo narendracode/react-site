@@ -1,0 +1,19 @@
+---
+sudo: required
+language: node_js
+node_js:
+  # LTS version
+  - "8.0"
+notifications:
+  email:
+    on_success: change # only if status change from fail to success
+    on_failure: always # if there is a fail
+    recipients:
+      - narendrasoni2@gmail.com
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: echo "build successful"
+  on:
+    branch: ["master"]
