@@ -1,24 +1,13 @@
 #!/usr/bin/expect
 set timeout 20
 set user $USER
-set password $PASSWORD
 
 set ip "webexpressive.com"
 
-spawn ssh $user@$ip
-
-# Look for passwod prompt
-expect "*?assword:*"
-send -- "$password\r"
-
-send -- "sudo su -\r"
-
-expect "*?assword"
-send -- "$password\r"
+spawn ssh -oIdentityFile=/key/key.pem $user@$ip
 
 send -- "cd /var/www/html/react-site\r"
 send -- "git pull\r"
-
 
 send -- "\r"
 expect eof
