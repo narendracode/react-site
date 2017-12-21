@@ -15,7 +15,8 @@ send -- "sudo su\r"
 expect "*?assword"
 send -- "$password\r"
 
-send -- "cd /var/www/html/react-site && git pull\r"
+send -- "cd /var/www/html/react-site\r"
+send -- "git pull\r"
 
 
 send -- "\r"
