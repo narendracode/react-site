@@ -6,6 +6,7 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-beta",
+    "chai": "^4.1.2",
     "font-awesome": "^4.7.0",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
@@ -18,6 +19,7 @@
     "glamorous": "^4.10.0",
     "jquery": "^1.9.1",
     "lodash": "^4.17.4",
+    "mocha": "^4.0.1",
     "moment": "^2.19.1",
     "popper.js": "^1.12.3",
     "react-lazyload": "^2.3.0",
@@ -35,7 +37,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha ./tests/sample.js"
   },
   "devDependencies": {
     "prettier": "^1.7.4"
