@@ -2,6 +2,7 @@
 set timeout 20
 set user $USER
 set password $PASSWORD
+
 set ip "webexpressive.com"
 
 spawn ssh $user@$ip
@@ -10,7 +11,7 @@ spawn ssh $user@$ip
 expect "*?assword:*"
 send -- "$password\r"
 
-send -- "sudo su\r"
+send -- "sudo su -\r"
 
 expect "*?assword"
 send -- "$password\r"
