@@ -1,5 +1,8 @@
 ---
 sudo: required
+language: node_js
+node_js:
+- "7"
 
 notifications:
   email:
@@ -14,3 +17,16 @@ deploy:
   script: echo "build successful"
   on:
     branch: ["master"]
+
+
+
+#script: npm run build               // The script that builds the app
+
+#deploy:
+#  local_dir: dist                   // The distributed output directory                  
+#  fqdn: deployable.site             // The domain name of the deployed site
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN
+#  on:
+#    branch: master
