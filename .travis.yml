@@ -9,7 +9,6 @@ before_install:
   - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   - sudo apt-get update
   - sudo apt-get -y install docker-ce
-  - docker build --tag narendrasoni1989/react-site .
 
 language: node_js
 node_js:
@@ -22,15 +21,16 @@ notifications:
     recipients:
       - narendrasoni2@gmail.com
 
-#after_success:
-#  - docker login -u narendrasoni1989 -p $DOCKER_PASSWORD;
-#  - docker push narendrasoni1989/react-site;
+after_success:
+  - docker login -u narendrasoni1989 -p $DOCKER_PASSWORD
+  - docker build --tag narendrasoni1989/react-site .
+  - docker push narendrasoni1989/react-site
 
 deploy:
   skip_cleanup: true
   provider: script
-  script:
-    - docker login -u narendrasoni1989 -p $DOCKER_PASSWORD;
-    - docker push narendrasoni1989/react-site;
+  script: echo "deployment successful...."
+    #- docker login -u narendrasoni1989 -p 2013Singapore;
+    #- docker push narendrasoni1989/react-site;
   on:
     branch: ["master"]
