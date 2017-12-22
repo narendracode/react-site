@@ -29,6 +29,8 @@ notifications:
 deploy:
   skip_cleanup: true
   provider: script
-  script: echo "Deployment Successful"
+  script:
+    - docker login -u narendrasoni1989 -p $DOCKER_PASSWORD;
+    - docker push narendrasoni1989/react-site;
   on:
     branch: ["master"]
