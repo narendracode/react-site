@@ -9,7 +9,7 @@ before_install:
   - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
   - sudo apt-get update
   - sudo apt-get -y install docker-ce
-  - docker build -t narendrasoni1989/react-site .
+  - docker build --tag "$DOCKER_USERNAME"/react-site .
 
 language: node_js
 node_js:
