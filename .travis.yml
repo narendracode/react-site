@@ -1,12 +1,16 @@
 ---
 sudo: required
 
+services:
+  - docker
+
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y expect
-  - touch /tmp/key.pem
-  - cat $KEY >> /tmp/key.pem
-  - chmod 400 /tmp/key.pem
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  - sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+  - sudo apt-get update
+  - sudo apt-get -y install docker-ce
+  - docker build -t narendrasoni1989/react-site .
+
 language: node_js
 node_js:
 - "7"
@@ -18,9 +22,15 @@ notifications:
     recipients:
       - narendrasoni2@gmail.com
 
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+    docker push "$DOCKER_USERNAME"/react-site;
+    fi
+
 deploy:
   skip_cleanup: true
   provider: script
-  script: expect ./scripts/expect.js
+  script: echo "Deployment Successful"
   on:
     branch: ["master"]
