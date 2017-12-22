@@ -6,7 +6,7 @@ class Footer extends React.Component {
     return (
       <footer className="footer">
         <div className="container">
-          <p className="text-muted">WebExpressive@2017</p>
+          <p className="text-muted">webexpressive.com@2017</p>
         </div>
       </footer>
     )
