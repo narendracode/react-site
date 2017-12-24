@@ -13,8 +13,8 @@
       "component---src-pages-index-js-39c3843a67a2c4b41a5d.js.map"
     ],
     "path---blog": [
-      "path---blog-da9a5a9a3a1c1a50ef3c.js",
-      "path---blog-da9a5a9a3a1c1a50ef3c.js.map"
+      "path---blog-8b4db292968afd4e1229.js",
+      "path---blog-8b4db292968afd4e1229.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
@@ -24,9 +24,21 @@
       "path---counter-a0e39f21c11f6a62c5ab.js",
       "path---counter-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---tags-cd": [
+      "path---tags-cd-286e7a1d991a6fc67bf2.js",
+      "path---tags-cd-286e7a1d991a6fc67bf2.js.map"
+    ],
+    "path---tags-ci": [
+      "path---tags-ci-260e0ed437b133dc4b84.js",
+      "path---tags-ci-260e0ed437b133dc4b84.js.map"
+    ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-914507d2f6ec193af8e4.js",
       "component---src-pages-contact-js-914507d2f6ec193af8e4.js.map"
+    ],
+    "path---categories-devops": [
+      "path---categories-devops-8571cac49717a3a98dce.js",
+      "path---categories-devops-8571cac49717a3a98dce.js.map"
     ],
     "component---src-pages-counter-js": [
       "component---src-pages-counter-js-5e0928b8e238fee010b2.js",
@@ -64,6 +76,10 @@
       "component---src-pages-about-css-modules-js-4c878fb3396e22012c83.js",
       "component---src-pages-about-css-modules-js-4c878fb3396e22012c83.js.map"
     ],
+    "path---tags-travisci": [
+      "path---tags-travisci-965c30277a4bf8d86e6a.js",
+      "path---tags-travisci-965c30277a4bf8d86e6a.js.map"
+    ],
     "component---src-pages-my-files-js": [
       "component---src-pages-my-files-js-b0a36c1c44972c0b05f8.js",
       "component---src-pages-my-files-js-b0a36c1c44972c0b05f8.js.map"
@@ -73,8 +89,8 @@
       "component---src-templates-category-js-a27bea77054af01248b5.js.map"
     ],
     "path---my-files": [
-      "path---my-files-63f5f1af6fb0f1256dfd.js",
-      "path---my-files-63f5f1af6fb0f1256dfd.js.map"
+      "path---my-files-3639ab7352a9215ce491.js",
+      "path---my-files-3639ab7352a9215ce491.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-cd51d374be13da4bdeeb.js",
@@ -90,6 +106,10 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---blog-superfast-ci-cd-using-docker-travisci-and-digitalocean": [
+      "path---blog-superfast-ci-cd-using-docker-travisci-and-digitalocean-178db45b674f7431fcd3.js",
+      "path---blog-superfast-ci-cd-using-docker-travisci-and-digitalocean-178db45b674f7431fcd3.js.map"
+    ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
@@ -98,9 +118,13 @@
       "path---blog-importance-of-github-for-web-developers-598a99352d28eae21056.js",
       "path---blog-importance-of-github-for-web-developers-598a99352d28eae21056.js.map"
     ],
+    "path---tags-docker": [
+      "path---tags-docker-ebdca5a59b36087a7081.js",
+      "path---tags-docker-ebdca5a59b36087a7081.js.map"
+    ],
     "component---src-pages-blog-js": [
-      "component---src-pages-blog-js-ab54fc6b28ab812e0d89.js",
-      "component---src-pages-blog-js-ab54fc6b28ab812e0d89.js.map"
+      "component---src-pages-blog-js-53ba7549f7a7596d75b7.js",
+      "component---src-pages-blog-js-53ba7549f7a7596d75b7.js.map"
     ],
     "path---page-3": [
       "path---page-3-a0e39f21c11f6a62c5ab.js",
@@ -111,9 +135,9 @@
       "component---src-pages-page-2-js-0500b7625369dee62a43.js.map"
     ],
     "app": [
-      "app-3be9b3e927ef5c575662.js",
+      "app-17e92739c050a9d70ceb.js",
       "build-js-styles.css",
-      "app-3be9b3e927ef5c575662.js.map",
+      "app-17e92739c050a9d70ceb.js.map",
       "build-js-styles.css.map"
     ],
     "path---categories-programming": [
@@ -123,6 +147,10 @@
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---tags-digitalocean": [
+      "path---tags-digitalocean-9eebd05b5d40b31cc60c.js",
+      "path---tags-digitalocean-9eebd05b5d40b31cc60c.js.map"
     ],
     "path---tags-github": [
       "path---tags-github-e35698458b258d00dc6f.js",
