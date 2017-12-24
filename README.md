@@ -25,7 +25,7 @@ Visit http://localhost:8000 in your browser.
 If you want to build production optimized files then run :
 
 ```
-gatsby develop
+gatsby build
 ```
 
 For demo please look into http://webexpressive.com
