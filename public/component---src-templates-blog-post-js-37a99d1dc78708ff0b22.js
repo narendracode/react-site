@@ -2739,7 +2739,7 @@ webpackJsonp([107818501498521],{
 	      identifier: postNode.path,
 	      title: postNode.title,
 	      url: url,
-	      category_id: postNode.categories[0],
+	      category_id: "tech",
 	      onNewComment: this.notifyAboutComment
 	    });
 	  };
@@ -3158,4 +3158,4 @@ webpackJsonp([107818501498521],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-ff625dd1cf3191829bb4.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-37a99d1dc78708ff0b22.js.map

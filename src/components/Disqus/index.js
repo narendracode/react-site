@@ -40,7 +40,7 @@ class Disqus extends Component {
         identifier={postNode.path}
         title={postNode.title}
         url={url}
-        category_id={postNode.categories[0]}
+        category_id="tech"
         onNewComment={this.notifyAboutComment}
       />
     );
