@@ -1,32 +1,16 @@
 import React, { Component } from "react";
 import ReactDisqusComments from "react-disqus-comments";
 import config from "../../../SiteConfig";
+import ReactDisqusThread from "react-disqus-thread";
 
-class Disqus extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      toasts: []
-    };
-    this.notifyAboutComment = this.notifyAboutComment.bind(this);
-    this.onSnackbarDismiss = this.onSnackbarDismiss.bind(this);
+class Disqus extends Component{
+
+  handleNewComment(comment) {
+    console.log(comment.text);
   }
 
-  onSnackbarDismiss() {
-    const [, ...toasts] = this.state.toasts;
-    this.setState({ toasts });
-  }
-  notifyAboutComment() {
-    const toasts = this.state.toasts.slice();
-    toasts.push({ text: "New comment available!" });
-    this.setState({ toasts });
-  }
-
-
-
+  
   render() {
-    console.log('hello world from Disqus');
-    //console.log(this.props);
     const { postNode } = this.props;
    
     if (!config.disqusShortname) {
@@ -35,16 +19,17 @@ class Disqus extends Component {
 
     const url = config.siteUrl + postNode.path;
     return (
-      <ReactDisqusComments
-        shortname={config.disqusShortname}
-        identifier="test123"
-        title={postNode.title}
-        url={url}
-        category_id="tech"
-        onNewComment={this.notifyAboutComment}
-      />
+      <ReactDisqusThread
+        shortname="webexpressive"
+        identifier="something-unique-12345"
+        title="Example Thread"
+        url="http://webexpressive.com/example-thread"
+        category_id="123456"
+        onNewComment={this.handleNewComment}/>
     );
   }
+
 }
+
 
 export default Disqus;
