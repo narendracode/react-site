@@ -2925,7 +2925,7 @@ webpackJsonp([107818501498521],{
 	      shortname: "webexpressive",
 	      identifier: "something-unique-12345",
 	      title: "Example Thread",
-	      url: "http://webexpressive.com/blog/superfast-CI-CD-using-docker-travisci-and-digitalocean/",
+	      url: "webexpressive.com/blog/superfast-CI-CD-using-docker-travisci-and-digitalocean/",
 	      category_id: "123456",
 	      onNewComment: this.handleNewComment });
 	  };
@@ -3344,4 +3344,4 @@ webpackJsonp([107818501498521],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-81069f528de5e6acd151.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-0b7119be7e939bcd71b3.js.map

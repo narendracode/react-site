@@ -23,7 +23,7 @@ class Disqus extends Component{
         shortname="webexpressive"
         identifier="something-unique-12345"
         title="Example Thread"
-        url="http://webexpressive.com/blog/superfast-CI-CD-using-docker-travisci-and-digitalocean/"
+        url="webexpressive.com/blog/superfast-CI-CD-using-docker-travisci-and-digitalocean/"
         category_id="123456"
         onNewComment={this.handleNewComment}/>
     );
