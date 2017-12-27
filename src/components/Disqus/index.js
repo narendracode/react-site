@@ -19,7 +19,7 @@ class Disqus extends Component{
 
     const url = config.siteUrl + postNode.path;
     return (
-      <ReactDisqusThread
+      <ReactDisqusComments
         shortname="webexpressive"
         identifier="something-unique-12345"
         title="Example Thread"

@@ -2921,7 +2921,7 @@ webpackJsonp([107818501498521],{
 	    }
 	
 	    var url = _SiteConfig2.default.siteUrl + postNode.path;
-	    return Glamor.createElement(_reactDisqusThread2.default, {
+	    return Glamor.createElement(_reactDisqusComments2.default, {
 	      shortname: "webexpressive",
 	      identifier: "something-unique-12345",
 	      title: "Example Thread",
@@ -3344,4 +3344,4 @@ webpackJsonp([107818501498521],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-0b7119be7e939bcd71b3.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-6a76b7e53b0c4ee1aec8.js.map
