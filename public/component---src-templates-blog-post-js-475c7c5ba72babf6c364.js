@@ -9,7 +9,7 @@ webpackJsonp([107818501498521],{
 	  siteTitle: "Webexpressive", // Site title.
 	  siteTitleAlt: "Webexpressive Blog", // Alternative site title for SEO.
 	  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-	  siteUrl: "webexpressive.com", // Domain of your website without pathPrefix.
+	  siteUrl: "http://webexpressive.com", // Domain of your website without pathPrefix.
 	  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
 	  siteDescription: "", // Website description used for RSS feeds/meta description tag.
 	  siteRss: "/rss.xml", // Path to the RSS file.
@@ -3158,4 +3158,4 @@ webpackJsonp([107818501498521],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-37a99d1dc78708ff0b22.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-475c7c5ba72babf6c364.js.map
