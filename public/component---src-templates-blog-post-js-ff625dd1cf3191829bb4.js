@@ -1,5 +1,48 @@
 webpackJsonp([107818501498521],{
 
+/***/ 156:
+/***/ (function(module, exports) {
+
+	"use strict";
+	
+	module.exports = {
+	  siteTitle: "Webexpressive", // Site title.
+	  siteTitleAlt: "Webexpressive Blog", // Alternative site title for SEO.
+	  siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+	  siteUrl: "webexpressive.com", // Domain of your website without pathPrefix.
+	  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+	  siteDescription: "", // Website description used for RSS feeds/meta description tag.
+	  siteRss: "/rss.xml", // Path to the RSS file.
+	  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
+	  googleAnalyticsID: "", // GA tracking ID.
+	  disqusShortname: "webexpresssive", // Disqus shortname.
+	  postDefaultCategoryID: "Tech", // Default category for posts.
+	  userName: "Narendra", // Username to display in the author segment.
+	  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+	  userLocation: "Singapore", // User location to display in the author segment.
+	  userAvatar: "", // User avatar to display in the author segment.
+	  userDescription: "", // User description to display in the author segment.
+	  // Links to social profiles/projects you want to display in the author segment/navigation bar.
+	  userLinks: [{
+	    label: "GitHub",
+	    url: "",
+	    iconClassName: "fa fa-github"
+	  }, {
+	    label: "Twitter",
+	    url: "",
+	    iconClassName: "fa fa-twitter"
+	  }, {
+	    label: "Email",
+	    url: "narendra.kumar.soni28@gmail.com",
+	    iconClassName: "fa fa-envelope"
+	  }],
+	  copyright: "Copyright © 2017. Webexpressive", // Copyright string for the footer of the website and RSS feed.
+	  themeColor: "", // Used for setting manifest and progress theme colors.
+	  backgroundColor: "" // Used for setting manifest background color.
+	};
+
+/***/ }),
+
 /***/ 86:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -228,7 +271,7 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 186:
+/***/ 188:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var baseProperty = __webpack_require__(67);
@@ -306,7 +349,7 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 13:
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var Symbol = __webpack_require__(19),
@@ -660,7 +703,7 @@ webpackJsonp([107818501498521],{
 	    Promise = __webpack_require__(88),
 	    Set = __webpack_require__(89),
 	    WeakMap = __webpack_require__(90),
-	    baseGetTag = __webpack_require__(13),
+	    baseGetTag = __webpack_require__(14),
 	    toSource = __webpack_require__(48);
 	
 	/** `Object#toString` result references. */
@@ -737,7 +780,7 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 211:
+/***/ 213:
 /***/ (function(module, exports) {
 
 	/** Used to compose unicode character classes. */
@@ -1421,12 +1464,12 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 226:
+/***/ 228:
 /***/ (function(module, exports, __webpack_require__) {
 
-	var asciiSize = __webpack_require__(186),
-	    hasUnicode = __webpack_require__(211),
-	    unicodeSize = __webpack_require__(227);
+	var asciiSize = __webpack_require__(188),
+	    hasUnicode = __webpack_require__(213),
+	    unicodeSize = __webpack_require__(229);
 	
 	/**
 	 * Gets the number of symbols in `string`.
@@ -1542,7 +1585,7 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 227:
+/***/ 229:
 /***/ (function(module, exports) {
 
 	/** Used to compose unicode character classes. */
@@ -1753,7 +1796,7 @@ webpackJsonp([107818501498521],{
 /***/ 35:
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(13),
+	var baseGetTag = __webpack_require__(14),
 	    isObject = __webpack_require__(17);
 	
 	/** `Object#toString` result references. */
@@ -1913,7 +1956,7 @@ webpackJsonp([107818501498521],{
 /***/ 121:
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(13),
+	var baseGetTag = __webpack_require__(14),
 	    isArray = __webpack_require__(7),
 	    isObjectLike = __webpack_require__(16);
 	
@@ -1950,7 +1993,7 @@ webpackJsonp([107818501498521],{
 /***/ 27:
 /***/ (function(module, exports, __webpack_require__) {
 
-	var baseGetTag = __webpack_require__(13),
+	var baseGetTag = __webpack_require__(14),
 	    isObjectLike = __webpack_require__(16);
 	
 	/** `Object#toString` result references. */
@@ -2063,14 +2106,14 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 231:
+/***/ 233:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var baseKeys = __webpack_require__(66),
 	    getTag = __webpack_require__(68),
 	    isArrayLike = __webpack_require__(23),
 	    isString = __webpack_require__(121),
-	    stringSize = __webpack_require__(226);
+	    stringSize = __webpack_require__(228);
 	
 	/** `Object#toString` result references. */
 	var mapTag = '[object Map]',
@@ -2151,7 +2194,238 @@ webpackJsonp([107818501498521],{
 
 /***/ }),
 
-/***/ 695:
+/***/ 236:
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _propTypes = __webpack_require__(12);
+	
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+	
+	var DISQUS_CONFIG = ['shortname', 'identifier', 'title', 'url', 'category_id', 'onNewComment', 'language'];
+	var __disqusAdded = false;
+	
+	function copyProps(context, props) {
+	    var onNewComment = props.onNewComment,
+	        language = props.language,
+	        rest = _objectWithoutProperties(props, ['onNewComment', 'language']);
+	
+	    for (var prop in rest) {
+	        context.page[prop] = rest[prop];
+	    }
+	
+	    // Setting the language - if none is provided, the default one is used
+	    context.language = language;
+	
+	    if (onNewComment) {
+	        context.callbacks = {
+	            onNewComment: [onNewComment]
+	        };
+	    }
+	}
+	
+	var DisqusThread = function (_React$Component) {
+	    _inherits(DisqusThread, _React$Component);
+	
+	    function DisqusThread() {
+	        _classCallCheck(this, DisqusThread);
+	
+	        return _possibleConstructorReturn(this, (DisqusThread.__proto__ || Object.getPrototypeOf(DisqusThread)).apply(this, arguments));
+	    }
+	
+	    _createClass(DisqusThread, [{
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
+	            this.loadDisqus();
+	        }
+	    }, {
+	        key: 'componentDidUpdate',
+	        value: function componentDidUpdate() {
+	            this.loadDisqus();
+	        }
+	    }, {
+	        key: 'shouldComponentUpdate',
+	        value: function shouldComponentUpdate(nextProps, nextState) {
+	            return nextProps.identifier !== this.props.identifier;
+	        }
+	    }, {
+	        key: 'render',
+	        value: function render() {
+	            var _this2 = this;
+	
+	            var props = Object.keys(this.props).reduce(function (memo, key) {
+	                return DISQUS_CONFIG.some(function (config) {
+	                    return config === key;
+	                }) ? memo : _extends({}, memo, _defineProperty({}, key, _this2.props[key]));
+	            }, {});
+	
+	            return _react2.default.createElement(
+	                'div',
+	                props,
+	                _react2.default.createElement('div', { id: 'disqus_thread' })
+	            );
+	        }
+	    }, {
+	        key: 'addDisqusScript',
+	        value: function addDisqusScript() {
+	            if (__disqusAdded) {
+	                return;
+	            }
+	
+	            var child = this.disqus = document.createElement('script');
+	            var parent = document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0];
+	
+	            child.async = true;
+	            child.type = 'text/javascript';
+	            child.src = '//' + this.props.shortname + '.disqus.com/embed.js';
+	
+	            parent.appendChild(child);
+	            __disqusAdded = true;
+	        }
+	    }, {
+	        key: 'loadDisqus',
+	        value: function loadDisqus() {
+	            var _this3 = this;
+	
+	            var props = {};
+	
+	            // Extract Disqus props that were supplied to this component
+	            DISQUS_CONFIG.forEach(function (prop) {
+	                // prop "shortname" is only necessary for loading the script, not for the config itself
+	                if (prop !== 'shortname' && !!_this3.props[prop]) {
+	                    props[prop] = _this3.props[prop];
+	                }
+	            });
+	
+	            // If Disqus has already been added, reset it
+	            if (typeof DISQUS !== 'undefined') {
+	                DISQUS.reset({
+	                    reload: true,
+	                    config: function config() {
+	                        copyProps(this, props);
+	
+	                        // Disqus needs hashbang URL, see https://help.disqus.com/customer/portal/articles/472107
+	                        this.page.url = this.page.url.replace(/#/, '') + '#!newthread';
+	                    }
+	                });
+	            } else {
+	                // Otherwise add Disqus to the page
+	                window.disqus_config = function () {
+	                    copyProps(this, props);
+	                };
+	                this.addDisqusScript();
+	            }
+	        }
+	    }]);
+	
+	    return DisqusThread;
+	}(_react2.default.Component);
+	
+	DisqusThread.displayName = 'DisqusThread';
+	
+	DisqusThread.propTypes = {
+	    id: _propTypes2.default.string,
+	
+	    /**
+	     * `shortname` tells the Disqus service your forum's shortname,
+	     * which is the unique identifier for your website as registered
+	     * on Disqus. If undefined , the Disqus embed will not load.
+	     */
+	    shortname: _propTypes2.default.string.isRequired,
+	
+	    /**
+	     * `identifier` tells the Disqus service how to identify the
+	     * current page. When the Disqus embed is loaded, the identifier
+	     * is used to look up the correct thread. If disqus_identifier
+	     * is undefined, the page's URL will be used. The URL can be
+	     * unreliable, such as when renaming an article slug or changing
+	     * domains, so we recommend using your own unique way of
+	     * identifying a thread.
+	     */
+	    identifier: _propTypes2.default.string,
+	
+	    /**
+	     * `title` tells the Disqus service the title of the current page.
+	     * This is used when creating the thread on Disqus for the first time.
+	     * If undefined, Disqus will use the <title> attribute of the page.
+	     * If that attribute could not be used, Disqus will use the URL of the page.
+	     */
+	    title: _propTypes2.default.string,
+	
+	    /**
+	     * `url` tells the Disqus service the URL of the current page.
+	     * If undefined, Disqus will take the window.location.href.
+	     * This URL is used to look up or create a thread if disqus_identifier
+	     * is undefined. In addition, this URL is always saved when a thread is
+	     * being created so that Disqus knows what page a thread belongs to.
+	     */
+	    url: _propTypes2.default.string,
+	
+	    /**
+	     * `category_id` tells the Disqus service the category to be used for
+	     * the current page. This is used when creating the thread on Disqus
+	     * for the first time.
+	     */
+	    category_id: _propTypes2.default.string,
+	
+	    /**
+	     * `onNewComment` function accepts one parameter `comment` which is a
+	     * JavaScript object with comment `id` and `text`. This allows you to track
+	     * user comments and replies and run a script after a comment is posted.
+	     */
+	    onNewComment: _propTypes2.default.func,
+	
+	    /**
+	     * `language` tells the Disqus service which language should be used.
+	     * Please refer to https://www.transifex.com/disqus/disqus/ on which languages can be used
+	     * If undefined, English is used as default one
+	     */
+	    language: _propTypes2.default.string
+	};
+	
+	DisqusThread.defaultProps = {
+	    url: typeof window === 'undefined' ? null : window.location.href
+	};
+	
+	exports.default = DisqusThread;
+
+/***/ }),
+
+/***/ 237:
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	module.exports = __webpack_require__(236);
+
+/***/ }),
+
+/***/ 699:
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -2396,6 +2670,92 @@ webpackJsonp([107818501498521],{
 /***/ 157:
 /***/ (function(module, exports, __webpack_require__) {
 
+	/* WEBPACK VAR INJECTION */(function(Glamor) {"use strict";
+	
+	exports.__esModule = true;
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDisqusComments = __webpack_require__(237);
+	
+	var _reactDisqusComments2 = _interopRequireDefault(_reactDisqusComments);
+	
+	var _SiteConfig = __webpack_require__(156);
+	
+	var _SiteConfig2 = _interopRequireDefault(_SiteConfig);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Disqus = function (_Component) {
+	  _inherits(Disqus, _Component);
+	
+	  function Disqus(props) {
+	    _classCallCheck(this, Disqus);
+	
+	    var _this = _possibleConstructorReturn(this, _Component.call(this, props));
+	
+	    _this.state = {
+	      toasts: []
+	    };
+	    _this.notifyAboutComment = _this.notifyAboutComment.bind(_this);
+	    _this.onSnackbarDismiss = _this.onSnackbarDismiss.bind(_this);
+	    return _this;
+	  }
+	
+	  Disqus.prototype.onSnackbarDismiss = function onSnackbarDismiss() {
+	    var _state$toasts = this.state.toasts,
+	        toasts = _state$toasts.slice(1);
+	
+	    this.setState({ toasts: toasts });
+	  };
+	
+	  Disqus.prototype.notifyAboutComment = function notifyAboutComment() {
+	    var toasts = this.state.toasts.slice();
+	    toasts.push({ text: "New comment available!" });
+	    this.setState({ toasts: toasts });
+	  };
+	
+	  Disqus.prototype.render = function render() {
+	    console.log('hello world from Disqus');
+	    //console.log(this.props);
+	    var postNode = this.props.postNode;
+	
+	
+	    if (!_SiteConfig2.default.disqusShortname) {
+	      return null;
+	    }
+	
+	    var url = _SiteConfig2.default.siteUrl + postNode.path;
+	    return Glamor.createElement(_reactDisqusComments2.default, {
+	      shortname: _SiteConfig2.default.disqusShortname,
+	      identifier: postNode.path,
+	      title: postNode.title,
+	      url: url,
+	      category_id: postNode.categories[0],
+	      onNewComment: this.notifyAboutComment
+	    });
+	  };
+	
+	  return Disqus;
+	}(_react.Component);
+	
+	exports.default = Disqus;
+	module.exports = exports["default"];
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(Glamor) {'use strict';
 	
 	exports.__esModule = true;
@@ -2461,11 +2821,11 @@ webpackJsonp([107818501498521],{
 	
 	exports.default = ReadNext;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 
-/***/ 340:
+/***/ 344:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Glamor) {'use strict';
@@ -2503,11 +2863,11 @@ webpackJsonp([107818501498521],{
 	
 	exports.default = SitePage;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 
-/***/ 341:
+/***/ 345:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Glamor) {'use strict';
@@ -2526,11 +2886,11 @@ webpackJsonp([107818501498521],{
 	
 	var _get2 = _interopRequireDefault(_get);
 	
-	var _size = __webpack_require__(231);
+	var _size = __webpack_require__(233);
 	
 	var _size2 = _interopRequireDefault(_size);
 	
-	var _ReadNext = __webpack_require__(157);
+	var _ReadNext = __webpack_require__(159);
 	
 	var _ReadNext2 = _interopRequireDefault(_ReadNext);
 	
@@ -2542,7 +2902,11 @@ webpackJsonp([107818501498521],{
 	
 	var _PostCategories2 = _interopRequireDefault(_PostCategories);
 	
-	__webpack_require__(587);
+	var _Disqus = __webpack_require__(157);
+	
+	var _Disqus2 = _interopRequireDefault(_Disqus);
+	
+	__webpack_require__(591);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -2624,7 +2988,7 @@ webpackJsonp([107818501498521],{
 	        data = _props.data,
 	        isIndex = _props.isIndex;
 	
-	
+	    var postNode = (0, _get2.default)(data, 'frontmatter');
 	    var title = (0, _get2.default)(data, 'frontmatter.title');
 	    var path = (0, _get2.default)(data, 'frontmatter.path');
 	    var date = (0, _get2.default)(data, 'frontmatter.date');
@@ -2670,7 +3034,8 @@ webpackJsonp([107818501498521],{
 	            dangerouslySetInnerHTML: { __html: description }
 	          })
 	        )
-	      )
+	      ),
+	      Glamor.createElement(_Disqus2.default, { postNode: postNode })
 	    );
 	  };
 	
@@ -2679,18 +3044,18 @@ webpackJsonp([107818501498521],{
 	
 	exports.default = SitePost;
 	module.exports = exports['default'];
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ }),
 
-/***/ 587:
+/***/ 591:
 /***/ (function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ }),
 
-/***/ 355:
+/***/ 359:
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(Glamor) {'use strict';
@@ -2714,15 +3079,15 @@ webpackJsonp([107818501498521],{
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _striptags = __webpack_require__(695);
+	var _striptags = __webpack_require__(699);
 	
 	var _striptags2 = _interopRequireDefault(_striptags);
 	
-	var _SitePost = __webpack_require__(341);
+	var _SitePost = __webpack_require__(345);
 	
 	var _SitePost2 = _interopRequireDefault(_SitePost);
 	
-	var _SitePage = __webpack_require__(340);
+	var _SitePage = __webpack_require__(344);
 	
 	var _SitePage2 = _interopRequireDefault(_SitePage);
 	
@@ -2788,9 +3153,9 @@ webpackJsonp([107818501498521],{
 	
 	exports.default = BlogPostTemplate;
 	var pageQuery = exports.pageQuery = '** extracted graphql fragment **';
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
 
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-2e9c8b43de6ea914296c.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-ff625dd1cf3191829bb4.js.map

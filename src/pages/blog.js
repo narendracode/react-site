@@ -5,6 +5,7 @@ import sortBy from 'lodash/sortBy'
 import Helmet from 'react-helmet'
 import LazyLoad from 'react-lazyload'
 import SitePostList from '../components/SitePostList'
+import Disqus from '../components/Disqus'
 
 class BlogIndex extends React.Component {
   render() {

@@ -5,6 +5,7 @@ import size from 'lodash/size'
 import ReadNext from '../ReadNext'
 import PostTags from '../PostTags'
 import PostCategories from '../PostCategories'
+import Disqus from '../Disqus'
 import './style.scss'
 
 class SitePost extends React.Component {
@@ -64,7 +65,7 @@ class SitePost extends React.Component {
 
   render() {
     const { site, data, isIndex } = this.props
-
+    const postNode = get(data, 'frontmatter')
     const title = get(data, 'frontmatter.title')
     const path = get(data, 'frontmatter.path')
     const date = get(data, 'frontmatter.date')
@@ -96,6 +97,7 @@ class SitePost extends React.Component {
             />
           </div>
         </div>
+        <Disqus postNode={postNode} />
       </div>
     )
   }
