@@ -91,5 +91,4 @@ Having a fully fleshed out and varied GitHub profile is a great way to stand out
 
 GitHub has become one of the few necessary platforms to use in today’s web development world. It is a great tool that makes your life easier, has the potential to make you stand out from other web developers and hosts some of the biggest and most interesting projects out there today. So I recommend you go out and explore the various projects on GitHub and start contributing to your favourite ones.
 
-Interested in launching a career in web development? Don’t forget to check out CareerFoundry’s Web Development Course too.
 Happy coding!
