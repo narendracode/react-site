@@ -37,7 +37,7 @@ class Disqus extends Component {
     return (
       <ReactDisqusComments
         shortname={config.disqusShortname}
-        identifier={postNode.path}
+        identifier="test123"
         title={postNode.title}
         url={url}
         category_id="tech"

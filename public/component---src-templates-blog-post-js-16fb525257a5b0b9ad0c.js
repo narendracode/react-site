@@ -2736,7 +2736,7 @@ webpackJsonp([107818501498521],{
 	    var url = _SiteConfig2.default.siteUrl + postNode.path;
 	    return Glamor.createElement(_reactDisqusComments2.default, {
 	      shortname: _SiteConfig2.default.disqusShortname,
-	      identifier: postNode.path,
+	      identifier: "test123",
 	      title: postNode.title,
 	      url: url,
 	      category_id: "tech",
@@ -3158,4 +3158,4 @@ webpackJsonp([107818501498521],{
 /***/ })
 
 });
-//# sourceMappingURL=component---src-templates-blog-post-js-475c7c5ba72babf6c364.js.map
+//# sourceMappingURL=component---src-templates-blog-post-js-16fb525257a5b0b9ad0c.js.map
